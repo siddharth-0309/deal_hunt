@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DealHunt — Compare Prices Across Amazon, Flipkart, Myntra & Ajio</title>
+  <meta name="description" content="Find the best deals on shoes and fashion. Compare prices across Amazon, Flipkart, Myntra and Ajio instantly." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <a href="index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+        </svg>
+      </div>
+      Deal<span>Hunt</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="index.html" class="active">Shoes</a>
+      <a href="pages/fashion.html">Fashion</a>
+      <a href="pages/deals.html">Deals</a>
+      <a href="pages/about.html">About</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Compare prices across all platforms</h1>
+    <p>Find the best deal on shoes & fashion — instantly</p>
+    <div class="platform-pills">
+      <div class="platform-pill">Amazon</div>
+      <div class="platform-pill">Flipkart</div>
+      <div class="platform-pill">Myntra</div>
+      <div class="platform-pill">Ajio</div>
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="Search shoes, jeans, t-shirts..." value="Nike sneakers" id="search-input" />
+      <button onclick="alert('Search coming soon! Add your affiliate links here.')">Search</button>
+    </div>
+  </section>
+
+  <!-- FILTERS -->
+  <div class="filters">
+    <div class="chip active">All</div>
+    <div class="chip">Under ₹1,000</div>
+    <div class="chip">Sneakers</div>
+    <div class="chip">Jeans</div>
+    <div class="chip">T-Shirts</div>
+    <div class="chip">Sports</div>
+    <div class="chip">Formals</div>
+    <div class="chip">Casual</div>
+    <div class="chip">Women</div>
+  </div>
+
+  <!-- PAGE BODY -->
+  <main class="page-body">
+
+    <!-- Sale Alert -->
+    <div class="alert-banner">
+      <span class="alert-badge">SALE</span>
+      <span class="alert-text">Amazon — Extra 10% off on Shoes today · Ends midnight</span>
+      <span class="alert-code">SHOE10</span>
+    </div>
+
+    <div class="section-label">3 results for "Nike sneakers"</div>
+
+    <!-- Product 1 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👟</div>
+        <div class="product-info">
+          <div class="product-name">Nike Air Max 270 — Black/White</div>
+          <div class="product-meta">Men's Running Shoes · Sizes 6–12</div>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">4.2 (1,840 reviews)</span>
+            <span class="badge badge-default">Best seller</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell winner">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount best">₹5,499</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount">₹5,999</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount">₹6,299</div>
+          <div class="delivery-time">4-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount">₹5,799</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+      </div>
+      <!-- Replace # with your Amazon affiliate link -->
+      <a href="#" class="buy-btn">
+        <span>Best deal on Amazon — ₹5,499</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👟</div>
+        <div class="product-info">
+          <div class="product-name">Nike Revolution 6 — Navy Blue</div>
+          <div class="product-meta">Men's Running Shoes · Sizes 6–11</div>
+          <div class="rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">4.5 (3,210 reviews)</span>
+            <span class="badge badge-rated">Top rated</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount">₹3,299</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell winner">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount best">₹2,999</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount">₹3,499</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount">₹3,199</div>
+          <div class="delivery-time">4-day delivery</div>
+        </div>
+      </div>
+      <a href="#" class="buy-btn">
+        <span>Best deal on Flipkart — ₹2,999</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👟</div>
+        <div class="product-info">
+          <div class="product-name">Adidas Ultraboost 22 — White/Grey</div>
+          <div class="product-meta">Men's Running Shoes · Sizes 7–12</div>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">4.4 (980 reviews)</span>
+            <span class="badge badge-trending">Trending</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount">₹8,999</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount">₹9,499</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell winner">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount best">₹8,499</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount">₹8,799</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+      </div>
+      <a href="#" class="buy-btn">
+        <span>Best deal on Myntra — ₹8,499</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <!-- Telegram Banner -->
+    <div class="tg-banner">
+      <div class="tg-icon">📢</div>
+      <div class="tg-text">
+        <h3>Get daily deals on Telegram!</h3>
+        <p>Join 10,000+ shoppers getting exclusive deals every day</p>
+      </div>
+      <a href="#" class="tg-btn">Join Now</a>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="index.html" class="footer-logo">Deal<span>Hunt</span></a>
+      <div class="footer-links">
+        <a href="index.html">Shoes</a>
+        <a href="pages/fashion.html">Fashion</a>
+        <a href="pages/deals.html">Deals</a>
+        <a href="pages/about.html">About</a>
+      </div>
+      <div class="footer-copy">
+        © 2025 DealHunt · Prices may vary. We earn commission on purchases via affiliate links.
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

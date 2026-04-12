@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fashion Deals — DealHunt</title>
+  <meta name="description" content="Compare fashion prices — jeans, t-shirts, kurtas across Amazon, Flipkart, Myntra and Ajio." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <a href="../index.html" class="logo">
+      <div class="logo-icon">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/>
+        </svg>
+      </div>
+      Deal<span>Hunt</span>
+    </a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="site-nav" id="site-nav">
+      <a href="../index.html">Shoes</a>
+      <a href="fashion.html" class="active">Fashion</a>
+      <a href="deals.html">Deals</a>
+      <a href="about.html">About</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Fashion — Best Prices Compared</h1>
+    <p>Jeans, T-Shirts, Kurtas & more across all platforms</p>
+    <div class="platform-pills">
+      <div class="platform-pill">Amazon</div>
+      <div class="platform-pill">Flipkart</div>
+      <div class="platform-pill">Myntra</div>
+      <div class="platform-pill">Ajio</div>
+    </div>
+    <div class="searchbar">
+      <input type="text" placeholder="Search jeans, t-shirts, kurtas..." />
+      <button onclick="alert('Search coming soon!')">Search</button>
+    </div>
+  </section>
+
+  <div class="filters">
+    <div class="chip active">All</div>
+    <div class="chip">Jeans</div>
+    <div class="chip">T-Shirts</div>
+    <div class="chip">Kurta</div>
+    <div class="chip">Shirts</div>
+    <div class="chip">Women</div>
+    <div class="chip">Under ₹500</div>
+    <div class="chip">Under ₹1,000</div>
+    <div class="chip">Premium</div>
+  </div>
+
+  <main class="page-body">
+
+    <div class="alert-banner">
+      <span class="alert-badge">HOT</span>
+      <span class="alert-text">Myntra End of Reason Sale — Up to 80% off on fashion today</span>
+      <span class="alert-code">EORS80</span>
+    </div>
+
+    <div class="section-label">Top fashion picks today</div>
+
+    <!-- Product 1 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👖</div>
+        <div class="product-info">
+          <div class="product-name">Levi's 511 Slim Fit Jeans — Dark Indigo</div>
+          <div class="product-meta">Men's Jeans · Waist 28–36 · All sizes available</div>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">4.3 (2,540 reviews)</span>
+            <span class="badge badge-trending">Trending</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount">₹2,499</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount">₹2,699</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell winner">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount best">₹2,199</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount">₹2,399</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+      </div>
+      <a href="#" class="buy-btn">
+        <span>Best deal on Myntra — ₹2,199</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <!-- Product 2 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👕</div>
+        <div class="product-info">
+          <div class="product-name">H&M Slim Fit T-Shirt — White / 5-pack</div>
+          <div class="product-meta">Men's T-Shirts · Sizes S–XXL</div>
+          <div class="rating-row">
+            <span class="stars">★★★★★</span>
+            <span class="review-count">4.6 (5,100 reviews)</span>
+            <span class="badge badge-rated">Top rated</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell winner">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount best">₹799</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount">₹949</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount">₹899</div>
+          <div class="delivery-time">4-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount">₹849</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+      </div>
+      <a href="#" class="buy-btn">
+        <span>Best deal on Amazon — ₹799</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <!-- Product 3 -->
+    <article class="product-card">
+      <div class="card-top">
+        <div class="product-thumb">👘</div>
+        <div class="product-info">
+          <div class="product-name">Manyavar Kurta Set — Royal Blue</div>
+          <div class="product-meta">Men's Ethnic · Sizes S–XL · Festive collection</div>
+          <div class="rating-row">
+            <span class="stars">★★★★☆</span>
+            <span class="review-count">4.1 (780 reviews)</span>
+            <span class="badge badge-default">Festive pick</span>
+          </div>
+        </div>
+      </div>
+      <div class="price-grid">
+        <div class="price-cell">
+          <div class="platform-name">Amazon</div>
+          <div class="price-amount">₹1,999</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Flipkart</div>
+          <div class="price-amount">₹2,199</div>
+          <div class="delivery-time">4-day delivery</div>
+        </div>
+        <div class="price-cell">
+          <div class="platform-name">Myntra</div>
+          <div class="price-amount">₹2,099</div>
+          <div class="delivery-time">3-day delivery</div>
+        </div>
+        <div class="price-cell winner">
+          <div class="platform-name">Ajio</div>
+          <div class="price-amount best">₹1,799</div>
+          <div class="lowest-badge">LOWEST</div>
+          <div class="delivery-time">2-day delivery</div>
+        </div>
+      </div>
+      <a href="#" class="buy-btn">
+        <span>Best deal on Ajio — ₹1,799</span>
+        <span class="arrow">→</span>
+      </a>
+    </article>
+
+    <div class="tg-banner">
+      <div class="tg-icon">📢</div>
+      <div class="tg-text">
+        <h3>Get daily fashion deals on Telegram!</h3>
+        <p>Exclusive deals, sale alerts & coupon codes — every day</p>
+      </div>
+      <a href="#" class="tg-btn">Join Now</a>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <a href="../index.html" class="footer-logo">Deal<span>Hunt</span></a>
+      <div class="footer-links">
+        <a href="../index.html">Shoes</a>
+        <a href="fashion.html">Fashion</a>
+        <a href="deals.html">Deals</a>
+        <a href="about.html">About</a>
+      </div>
+      <div class="footer-copy">
+        © 2025 DealHunt · Prices may vary. We earn commission on purchases via affiliate links.
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
