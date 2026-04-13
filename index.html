@@ -9,7 +9,6 @@
 </head>
 <body>
 
-  <!-- HEADER -->
   <header class="site-header">
     <a href="index.html" class="logo">
       <div class="logo-icon">
@@ -30,7 +29,6 @@
     </nav>
   </header>
 
-  <!-- HERO -->
   <section class="hero">
     <h1>Compare prices across all platforms</h1>
     <p>Find the best deal on shoes & fashion — instantly</p>
@@ -41,12 +39,11 @@
       <div class="platform-pill">Ajio</div>
     </div>
     <div class="searchbar">
-      <input type="text" placeholder="Search shoes, jeans, t-shirts..." value="Nike sneakers" id="search-input" />
-      <button onclick="alert('Search coming soon! Add your affiliate links here.')">Search</button>
+      <input type="text" placeholder="Search shoes, jeans, t-shirts..." id="search-input" />
+      <button onclick="searchProducts()">Search</button>
     </div>
   </section>
 
-  <!-- FILTERS -->
   <div class="filters">
     <div class="chip active">All</div>
     <div class="chip">Under ₹1,000</div>
@@ -59,161 +56,31 @@
     <div class="chip">Women</div>
   </div>
 
-  <!-- PAGE BODY -->
   <main class="page-body">
 
-    <!-- Sale Alert -->
     <div class="alert-banner">
       <span class="alert-badge">SALE</span>
       <span class="alert-text">Amazon — Extra 10% off on Shoes today · Ends midnight</span>
       <span class="alert-code">SHOE10</span>
     </div>
 
-    <div class="section-label">3 results for "Nike sneakers"</div>
+    <div class="section-label" id="product-count">Products load ho rahe hain...</div>
+    <div id="products-container"></div>
 
-    <!-- Product 1 -->
-    <article class="product-card">
-      <div class="card-top">
-        <div class="product-thumb">👟</div>
-        <div class="product-info">
-          <div class="product-name">Nike Air Max 270 — Black/White</div>
-          <div class="product-meta">Men's Running Shoes · Sizes 6–12</div>
-          <div class="rating-row">
-            <span class="stars">★★★★☆</span>
-            <span class="review-count">4.2 (1,840 reviews)</span>
-            <span class="badge badge-default">Best seller</span>
-          </div>
-        </div>
-      </div>
-      <div class="price-grid">
-        <div class="price-cell winner">
-          <div class="platform-name">Amazon</div>
-          <div class="price-amount best">₹5,499</div>
-          <div class="lowest-badge">LOWEST</div>
-          <div class="delivery-time">2-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Flipkart</div>
-          <div class="price-amount">₹5,999</div>
-          <div class="delivery-time">3-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Myntra</div>
-          <div class="price-amount">₹6,299</div>
-          <div class="delivery-time">4-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Ajio</div>
-          <div class="price-amount">₹5,799</div>
-          <div class="delivery-time">3-day delivery</div>
-        </div>
-      </div>
-      <!-- Replace # with your Amazon affiliate link -->
-      <a href="#" class="buy-btn">
-        <span>Best deal on Amazon — ₹5,499</span>
-        <span class="arrow">→</span>
-      </a>
-    </article>
+    <div class="section-label" style="margin-top:28px;" id="deals-count"></div>
+    <div id="deals-container"></div>
 
-    <!-- Product 2 -->
-    <article class="product-card">
-      <div class="card-top">
-        <div class="product-thumb">👟</div>
-        <div class="product-info">
-          <div class="product-name">Nike Revolution 6 — Navy Blue</div>
-          <div class="product-meta">Men's Running Shoes · Sizes 6–11</div>
-          <div class="rating-row">
-            <span class="stars">★★★★★</span>
-            <span class="review-count">4.5 (3,210 reviews)</span>
-            <span class="badge badge-rated">Top rated</span>
-          </div>
-        </div>
-      </div>
-      <div class="price-grid">
-        <div class="price-cell">
-          <div class="platform-name">Amazon</div>
-          <div class="price-amount">₹3,299</div>
-          <div class="delivery-time">2-day delivery</div>
-        </div>
-        <div class="price-cell winner">
-          <div class="platform-name">Flipkart</div>
-          <div class="price-amount best">₹2,999</div>
-          <div class="lowest-badge">LOWEST</div>
-          <div class="delivery-time">2-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Myntra</div>
-          <div class="price-amount">₹3,499</div>
-          <div class="delivery-time">3-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Ajio</div>
-          <div class="price-amount">₹3,199</div>
-          <div class="delivery-time">4-day delivery</div>
-        </div>
-      </div>
-      <a href="#" class="buy-btn">
-        <span>Best deal on Flipkart — ₹2,999</span>
-        <span class="arrow">→</span>
-      </a>
-    </article>
-
-    <!-- Product 3 -->
-    <article class="product-card">
-      <div class="card-top">
-        <div class="product-thumb">👟</div>
-        <div class="product-info">
-          <div class="product-name">Adidas Ultraboost 22 — White/Grey</div>
-          <div class="product-meta">Men's Running Shoes · Sizes 7–12</div>
-          <div class="rating-row">
-            <span class="stars">★★★★☆</span>
-            <span class="review-count">4.4 (980 reviews)</span>
-            <span class="badge badge-trending">Trending</span>
-          </div>
-        </div>
-      </div>
-      <div class="price-grid">
-        <div class="price-cell">
-          <div class="platform-name">Amazon</div>
-          <div class="price-amount">₹8,999</div>
-          <div class="delivery-time">2-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Flipkart</div>
-          <div class="price-amount">₹9,499</div>
-          <div class="delivery-time">3-day delivery</div>
-        </div>
-        <div class="price-cell winner">
-          <div class="platform-name">Myntra</div>
-          <div class="price-amount best">₹8,499</div>
-          <div class="lowest-badge">LOWEST</div>
-          <div class="delivery-time">2-day delivery</div>
-        </div>
-        <div class="price-cell">
-          <div class="platform-name">Ajio</div>
-          <div class="price-amount">₹8,799</div>
-          <div class="delivery-time">3-day delivery</div>
-        </div>
-      </div>
-      <a href="#" class="buy-btn">
-        <span>Best deal on Myntra — ₹8,499</span>
-        <span class="arrow">→</span>
-      </a>
-    </article>
-
-    <!-- Telegram Banner -->
     <div class="tg-banner">
       <div class="tg-icon">📢</div>
       <div class="tg-text">
         <h3>Get daily deals on Telegram!</h3>
-        <p>Join 10,000+ shoppers getting exclusive deals every day</p>
+        <p>Join shoppers getting exclusive deals every day</p>
       </div>
-      <a href="#" class="tg-btn">Join Now</a>
+      <a href="#" target="_blank" class="tg-btn">Join Now</a>
     </div>
 
   </main>
 
-  <!-- FOOTER -->
   <footer class="site-footer">
     <div class="footer-inner">
       <a href="index.html" class="footer-logo">Deal<span>Hunt</span></a>
@@ -232,3 +99,4 @@
   <script src="js/main.js"></script>
 </body>
 </html>
+
